@@ -11,6 +11,8 @@ export default function Board({
     timeframes
   } = data
 
+  const timeframe = 'weekly'
+
   return (
     <div className="bg-primary-light-red-work rounded-md">
       <img
@@ -25,8 +27,8 @@ export default function Board({
           <img src="/src/assets/images/icon-ellipsis.svg" alt="" />
         </div>
 
-        <h3 className="text-6xl">{timeframes.weekly.current + 'hrs'}</h3>
-        <p>Last Week - {timeframes.weekly.previous + 'hrs'}</p>
+        <h3 className="text-6xl">{timeframes[timeframe].current + 'hrs'}</h3>
+        <p>Last Week - {timeframes[timeframe].previous + 'hrs'}</p>
       </div>
     </div>
   )
