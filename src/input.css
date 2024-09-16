@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+    @font-face {
+        font-family: Rubik;
+        font-weight: 400;
+    }
+}
