@@ -11,7 +11,16 @@ export default function Dashboard({
     data: Data[]
 }) {
     const [currentlyActive, setCurrentlyActive] = React.useState('weekly')
-        
+
+    const boardColors = [
+        'bg-primary-light-red-work',
+        'bg-primary-soft-blue-play',
+        'bg-primary-light-red-study',
+        'bg-primary-lime-green-exercise',
+        'bg-primary-voilet-social',
+        'bg-primary-soft-orange-self-care'
+    ]
+
     return (
         <div className="flex gap-5">
             <Userboard state={{
@@ -27,6 +36,7 @@ export default function Dashboard({
                                 currentlyActive,
                                 ...it
                             }}
+                            color={boardColors[i]}
                             key={i}
                         />
                     )

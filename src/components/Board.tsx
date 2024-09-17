@@ -1,11 +1,13 @@
 import { Data } from "../types/Data"
 
 export default function Board({
-  data
+  data,
+  color
 }: {
   data: Data & {
     currentlyActive: string
-  }
+  },
+  color: string
 }) {
   const {timeframes} = data
 
@@ -20,7 +22,7 @@ export default function Board({
   }
 
   return (
-    <div className="bg-primary-light-red-work rounded-2xl overflow-hidden">
+    <div className={`${color} rounded-2xl overflow-hidden`}>
       <img
         src={'/src/assets/images/' + data.src}
         className="ml-auto -mt-3 h-[60px]"

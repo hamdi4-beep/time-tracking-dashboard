@@ -678,6 +678,31 @@ video {
   background-color: hsl(15 100% 70% / var(--tw-bg-opacity));
 }
 
+.bg-primary-light-red-study {
+  --tw-bg-opacity: 1;
+  background-color: hsl(348 100% 68% / var(--tw-bg-opacity));
+}
+
+.bg-primary-lime-green-exercise {
+  --tw-bg-opacity: 1;
+  background-color: hsl(145 58% 55% / var(--tw-bg-opacity));
+}
+
+.bg-primary-soft-blue-play {
+  --tw-bg-opacity: 1;
+  background-color: hsl(195 74% 62% / var(--tw-bg-opacity));
+}
+
+.bg-primary-soft-orange-self-care {
+  --tw-bg-opacity: 1;
+  background-color: hsl(43 84% 65% / var(--tw-bg-opacity));
+}
+
+.bg-primary-voilet-social {
+  --tw-bg-opacity: 1;
+  background-color: hsl(264 64% 52% / var(--tw-bg-opacity));
+}
+
 .p-4 {
   padding: 1rem;
 }
