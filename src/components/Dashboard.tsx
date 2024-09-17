@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import Userboard from "./Userboard"
+import Userboard from './UserBoard'
 import Board from "./Board"
 
 import { Data } from "../types/Data"
