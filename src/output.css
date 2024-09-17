@@ -739,6 +739,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-neutral-pale-blue {
+  --tw-text-opacity: 1;
+  color: hsl(236 100% 87% / var(--tw-text-opacity));
+}
+
 .outline {
   outline-style: solid;
 }

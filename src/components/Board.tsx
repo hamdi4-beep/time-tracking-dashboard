@@ -39,7 +39,7 @@ export default function Board({
         </div>
 
         <h3 className="text-6xl font-light">{timeframe.current + 'hrs'}</h3>
-        <p className="mt-5 text-neutral-desaturated-blue">{phrases[data.currentlyActive]} - {timeframe.previous + 'hrs'}</p>
+        <p className="mt-5 text-neutral-pale-blue">{phrases[data.currentlyActive]} - {timeframe.previous + 'hrs'}</p>
       </div>
     </div>
   )
