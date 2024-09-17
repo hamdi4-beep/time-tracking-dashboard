@@ -15,7 +15,7 @@ export default function Userboard({
 
   const handleClick = (e: React.SyntheticEvent) => {
     const target = e.target as HTMLElement
-    setCurrentlyActive((target.textContent as string).toLowerCase())
+    setCurrentlyActive((target.textContent!).toLowerCase())
   }
 
   return (

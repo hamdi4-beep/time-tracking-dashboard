@@ -33,12 +33,12 @@ export default function Board({
 
       <div className="bg-neutral-dark-blue h-full p-7 -mt-4 rounded-2xl relative">
         <div className="flex justify-between items-center mb-7">
-          <h2 className="text-1xl font-bold">{title}</h2>
+          <h2 className="text-1xl font-medium">{title}</h2>
           <img
             src="/src/assets/images/icon-ellipsis.svg" alt="" />
         </div>
 
-        <h3 className="text-6xl">{timeframe.current + 'hrs'}</h3>
+        <h3 className="text-6xl font-light">{timeframe.current + 'hrs'}</h3>
         <p className="mt-5 text-neutral-desaturated-blue">{phrases[data.currentlyActive]} - {timeframe.previous + 'hrs'}</p>
       </div>
     </div>

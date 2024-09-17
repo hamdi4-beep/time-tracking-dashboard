@@ -721,6 +721,10 @@ video {
   font-weight: 300;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .font-thin {
   font-weight: 100;
 }
