@@ -36,7 +36,7 @@ export default function Dashboard({
                                 currentlyActive,
                                 ...it
                             }}
-                            color={boardColors[i]}
+                            backgroundColor={boardColors[i]}
                             key={i}
                         />
                     )
