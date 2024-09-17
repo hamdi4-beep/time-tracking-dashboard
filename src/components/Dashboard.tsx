@@ -11,9 +11,13 @@ export default function Dashboard({
     data: Data[]
 }) {
     const [currentlyActive, setCurrentlyActive] = React.useState('weekly')
+        
     return (
         <div className="flex gap-5">
-            <Userboard changeCurrentlyActive={setCurrentlyActive} />
+            <Userboard state={{
+                currentlyActive,
+                setCurrentlyActive
+            }} />
 
             <div className="grid grid-cols-3 gap-4">
                 {data.map((it, i) => {

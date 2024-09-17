@@ -8,3 +8,14 @@
         font-weight: 400;
     }
 }
+
+.timeframes-list {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.timeframes-list span {
+    align-self: flex-start;
+    cursor: pointer;
+}

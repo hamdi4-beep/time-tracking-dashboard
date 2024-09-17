@@ -1,11 +1,21 @@
+import * as React from 'react'
+
 export default function Userboard({
-  changeCurrentlyActive
+  state
 }: {
-  changeCurrentlyActive: React.Dispatch<React.SetStateAction<string>>
+  state: {
+    currentlyActive: string
+    setCurrentlyActive: React.Dispatch<React.SetStateAction<string>>
+  }
 }) {
+  const {
+    currentlyActive,
+    setCurrentlyActive
+  } = state
+
   const handleClick = (e: React.SyntheticEvent) => {
     const target = e.target as HTMLElement
-    changeCurrentlyActive((target.textContent as string).toLowerCase())
+    setCurrentlyActive((target.textContent as string).toLowerCase())
   }
 
   return (
@@ -25,10 +35,16 @@ export default function Userboard({
         </div>
       </div>
 
-      <div className="px-8 p-4 text-neutral-desaturated-blue">
-        <p onClick={handleClick}>Daily</p>
-        <p onClick={handleClick} className="py-2 text-white">Weekly</p>
-        <p onClick={handleClick}>Monthly</p>
+      <div className="timeframes-list px-8 p-4 text-neutral-desaturated-blue">
+        {['Daily', 'Weekly', 'Monthly'].map((timeframe, i) => {
+          return (
+            <span
+              onClick={handleClick}
+              className={`${currentlyActive === timeframe.toLowerCase() ? 'text-white' : ''}`}
+              key={i}
+            >{timeframe}</span>
+          )
+        })}
       </div>
     </div>
   )
