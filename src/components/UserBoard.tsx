@@ -15,7 +15,7 @@ export default function Userboard({
 
   const handleClick = (e: React.SyntheticEvent) => {
     const target = e.target as HTMLElement
-    setCurrentlyActive((target.textContent!).toLowerCase())
+    setCurrentlyActive(target.textContent!)
   }
 
   return (
@@ -40,7 +40,7 @@ export default function Userboard({
           return (
             <span
               onClick={handleClick}
-              className={`${currentlyActive === timeframe.toLowerCase() ? 'text-white' : ''}`}
+              className={`${currentlyActive === timeframe ? 'text-white' : ''}`}
               key={i}
             >{timeframe}</span>
           )

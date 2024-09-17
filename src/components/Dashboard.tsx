@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import Userboard from "./Userboard"
+import Userboard from "./UserBoard"
 import Board from "./Board"
 
 import { Data } from "../types/Data"
@@ -10,7 +10,7 @@ export default function Dashboard({
 }: {
     data: Data[]
 }) {
-    const [currentlyActive, setCurrentlyActive] = React.useState('weekly')
+    const [currentlyActive, setCurrentlyActive] = React.useState('Weekly')
 
     const boardColors = [
         'bg-primary-light-red-work',

@@ -9,14 +9,17 @@ export default function Board({
   },
   color: string
 }) {
-  const {timeframes} = data
+  const {
+    currentlyActive,
+    timeframes
+  } = data
 
-  const timeframe = timeframes[data.currentlyActive]
+  const timeframe = timeframes[currentlyActive.toLowerCase()]
 
   const lasttimes = {
-    'daily': 'Yesterday',
-    'weekly': 'Last Week',
-    'monthly': 'Last Month'
+    'Daily': 'Yesterday',
+    'Weekly': 'Last Week',
+    'Monthly': 'Last Month'
   } as {
     [key: string]: string
   }
