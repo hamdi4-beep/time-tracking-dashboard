@@ -20,8 +20,8 @@ export default function Userboard({
         </div>
 
         <div className="mt-10 mb-12">
-          <span>Report for</span>
-          <h1 className="text-5xl pr-8">Jeremy<br />Robson</h1>
+          <span className="font-thin">Report for</span>
+          <h1 className="text-5xl pr-8 mt-2 font-light">Jeremy<br />Robson</h1>
         </div>
       </div>
 
