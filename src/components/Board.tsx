@@ -3,15 +3,26 @@ import { Data } from "../types/Data"
 export default function Board({
   data
 }: {
-  data: Data
+  data: Data & {
+    currentlyActive: string
+  }
 }) {
   const {
+    currentlyActive,
     src,
     title,
     timeframes
   } = data
 
-  const timeframe = 'weekly'
+  const timeframe = timeframes[currentlyActive]
+
+  const phrases = {
+    'daily': 'Yesterday',
+    'weekly': 'Last Week',
+    'monthly': 'Last Month'
+  } as {
+    [key: string]: string
+  }
 
   return (
     <div className="bg-primary-light-red-work rounded-md">
@@ -27,8 +38,8 @@ export default function Board({
           <img src="/src/assets/images/icon-ellipsis.svg" alt="" />
         </div>
 
-        <h3 className="text-6xl">{timeframes[timeframe].current + 'hrs'}</h3>
-        <p>Last Week - {timeframes[timeframe].previous + 'hrs'}</p>
+        <h3 className="text-6xl">{timeframe.current + 'hrs'}</h3>
+        <p>{phrases[currentlyActive]} - {timeframe.previous + 'hrs'}</p>
       </div>
     </div>
   )

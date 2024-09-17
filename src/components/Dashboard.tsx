@@ -1,3 +1,5 @@
+import * as React from 'react'
+
 import Userboard from "./Userboard"
 import Board from "./Board"
 
@@ -8,15 +10,19 @@ export default function Dashboard({
 }: {
     data: Data[]
 }) {
+    const [currentlyActive, setCurrentlyActive] = React.useState('weekly')
     return (
         <div className="flex items-start gap-5">
-            <Userboard />
+            <Userboard changeCurrentlyActive={setCurrentlyActive} />
 
             <div className="grid grid-cols-3 gap-4 items-start">
                 {data.map((it, i) => {
                     return (
                         <Board
-                            data={it}
+                            data={{
+                                currentlyActive,
+                                ...it
+                            }}
                             key={i}
                         />
                     )

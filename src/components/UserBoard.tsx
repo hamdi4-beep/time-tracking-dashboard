@@ -1,4 +1,13 @@
-export default function Userboard() {
+export default function Userboard({
+  changeCurrentlyActive
+}: {
+  changeCurrentlyActive: React.Dispatch<React.SetStateAction<string>>
+}) {
+  const handleClick = (e: React.SyntheticEvent) => {
+    const target = e.target as HTMLElement
+    changeCurrentlyActive((target.textContent as string).toLowerCase())
+  }
+
   return (
     <div className="bg-neutral-dark-blue rounded-md flex-grow">
       <div className="bg-neutral-desaturated-blue p-8 rounded-md">
@@ -17,9 +26,9 @@ export default function Userboard() {
       </div>
 
       <div className="px-8 p-4">
-        <p>Daily</p>
-        <p className="py-2">Weekly</p>
-        <p>Montly</p>
+        <p onClick={handleClick}>Daily</p>
+        <p onClick={handleClick} className="py-2">Weekly</p>
+        <p onClick={handleClick}>Monthly</p>
       </div>
     </div>
   )

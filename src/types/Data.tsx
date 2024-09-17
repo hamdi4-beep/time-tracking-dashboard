@@ -14,5 +14,6 @@ export type Data = {
             current: number
             previous: number
         }
+        [key: string]: any
     }
 }
