@@ -8,13 +8,12 @@ export default function Board({
   }
 }) {
   const {
-    currentlyActive,
     src,
     title,
     timeframes
   } = data
 
-  const timeframe = timeframes[currentlyActive]
+  const timeframe = timeframes[data.currentlyActive]
 
   const phrases = {
     'daily': 'Yesterday',
@@ -25,21 +24,22 @@ export default function Board({
   }
 
   return (
-    <div className="bg-primary-light-red-work rounded-md">
+    <div className="bg-primary-light-red-work rounded-2xl overflow-hidden">
       <img
         src={'/src/assets/images/' + src}
-        className="ml-auto -z-10"
+        className="ml-auto -mt-3 h-[60px]"
         alt=""
       />
 
-      <div className="bg-neutral-dark-blue -mt-5 p-7 z-10 rounded-md relative">
-        <div className="flex justify-between items-center -mt-4 mb-4">
-          <h2 className="text-2xl">{title}</h2>
-          <img src="/src/assets/images/icon-ellipsis.svg" alt="" />
+      <div className="bg-neutral-dark-blue h-full p-7 -mt-4 rounded-2xl relative">
+        <div className="flex justify-between items-center mb-7">
+          <h2 className="text-1xl font-bold">{title}</h2>
+          <img
+            src="/src/assets/images/icon-ellipsis.svg" alt="" />
         </div>
 
         <h3 className="text-6xl">{timeframe.current + 'hrs'}</h3>
-        <p>{phrases[currentlyActive]} - {timeframe.previous + 'hrs'}</p>
+        <p className="mt-5 text-neutral-desaturated-blue">{phrases[data.currentlyActive]} - {timeframe.previous + 'hrs'}</p>
       </div>
     </div>
   )
