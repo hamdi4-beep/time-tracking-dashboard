@@ -18,7 +18,7 @@ export default function Userboard({
 
   return (
     <div className="bg-neutral-dark-blue rounded-2xl flex-grow">
-      <div className="bg-neutral-desaturated-blue p-8 rounded-2xl flex gap-5 lg:block">
+      <div className="user-profile bg-neutral-desaturated-blue p-8 rounded-2xl flex gap-5 items-center">
         <div className="w-24 h-24">
           <img
             src="/src/assets/images/image-jeremy.png"

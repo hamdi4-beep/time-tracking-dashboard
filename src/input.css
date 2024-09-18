@@ -25,4 +25,8 @@
     .timeframes-list {
         flex-direction: column;
     }
+
+    .user-profile {
+        display: block;
+    }
 }

@@ -789,6 +789,10 @@ video {
   .timeframes-list {
     flex-direction: column;
   }
+
+  .user-profile {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
@@ -804,9 +808,5 @@ video {
 
   .lg\:mt-10 {
     margin-top: 2.5rem;
-  }
-
-  .lg\:block {
-    display: block;
   }
 }
