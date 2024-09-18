@@ -25,7 +25,7 @@ export default function Board({
   }
 
   return (
-    <div className={`${backgroundColor} rounded-2xl overflow-hidden`}>
+    <div className={`${backgroundColor} rounded-2xl overflow-hidden w-64`}>
       <img
         src={'/src/assets/images/' + data.src}
         className="ml-auto -mt-3 h-[60px]"
