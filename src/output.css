@@ -566,8 +566,12 @@ video {
   margin-top: -1rem;
 }
 
-.mb-7 {
-  margin-bottom: 1.75rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .ml-auto {
@@ -576,10 +580,6 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .flex {
@@ -606,20 +606,24 @@ video {
   height: 100vh;
 }
 
+.max-h-screen {
+  max-height: 100vh;
+}
+
 .w-24 {
   width: 6rem;
 }
 
-.flex-grow {
-  flex-grow: 1;
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.place-content-center {
+  place-content: center;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .items-center {
@@ -632,10 +636,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-5 {
@@ -703,8 +703,8 @@ video {
   padding: 1rem;
 }
 
-.p-7 {
-  padding: 1.75rem;
+.p-5 {
+  padding: 1.25rem;
 }
 
 .p-8 {
@@ -716,22 +716,18 @@ video {
   padding-right: 2rem;
 }
 
-.pr-8 {
-  padding-right: 2rem;
-}
-
 .font-rubik {
   font-family: Rubik, sans;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-light {
@@ -785,7 +781,12 @@ video {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1025px) {
+.boards-container {
+  display: block;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 769px) {
   .timeframes-list {
     flex-direction: column;
   }
@@ -793,11 +794,54 @@ video {
   .user-profile {
     display: block;
   }
+
+  .boards-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(16rem, 1fr));
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
-  .md\:w-64 {
-    width: 16rem;
+  .md\:m-0 {
+    margin: 0px;
+  }
+
+  .md\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
+  .md\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .md\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 

@@ -22,13 +22,13 @@ export default function Dashboard({
     const [currentlyActive, setCurrentlyActive] = React.useState('Weekly')
 
     return (
-        <div className="flex gap-5 flex-wrap">
+        <div className="flex flex-wrap md:flex-nowrap gap-5">
             <Userboard state={{
                 currentlyActive,
                 setCurrentlyActive
             }} />
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="boards-container">
                 {data.map((it, i) => {
                     return (
                         <Board
