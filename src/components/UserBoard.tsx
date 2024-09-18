@@ -18,7 +18,7 @@ export default function Userboard({
 
   return (
     <div className="bg-neutral-dark-blue rounded-2xl flex-grow">
-      <div className="bg-neutral-desaturated-blue p-8 rounded-2xl">
+      <div className="bg-neutral-desaturated-blue p-8 rounded-2xl flex gap-5 lg:block">
         <div className="w-24 h-24">
           <img
             src="/src/assets/images/image-jeremy.png"
@@ -27,9 +27,9 @@ export default function Userboard({
           />
         </div>
 
-        <div className="mt-10 mb-12">
+        <div className="lg:mt-10 lg:mb-12">
           <span className="font-thin">Report for</span>
-          <h1 className="text-5xl pr-8 mt-2 font-light">Jeremy<br />Robson</h1>
+          <h1 className="text-5xl pr-8 mt-2 font-light">Jeremy Robson</h1>
         </div>
       </div>
 

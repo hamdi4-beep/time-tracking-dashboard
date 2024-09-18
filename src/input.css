@@ -11,11 +11,18 @@
 
 .timeframes-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     gap: .5em;
 }
 
 .timeframes-list span {
     align-self: flex-start;
     cursor: pointer;
+}
+
+@media screen and (min-width: 1025px) {
+    .timeframes-list {
+        flex-direction: column;
+    }
 }

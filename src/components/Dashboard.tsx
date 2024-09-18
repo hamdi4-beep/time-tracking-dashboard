@@ -22,7 +22,7 @@ export default function Dashboard({
     const [currentlyActive, setCurrentlyActive] = React.useState('Weekly')
 
     return (
-        <div className="flex gap-5">
+        <div className="flex gap-5 flex-wrap">
             <Userboard state={{
                 currentlyActive,
                 setCurrentlyActive
