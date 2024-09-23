@@ -1,5 +1,3 @@
-import * as React from 'react'
-
 export default function Userboard({
   state
 }: {
@@ -15,12 +13,12 @@ export default function Userboard({
 
   const handleClick = (e: React.SyntheticEvent) => {
     const target = e.target as HTMLElement
-    setCurrentlyActive((target.textContent!).toLowerCase())
+    setCurrentlyActive(target.textContent!)
   }
 
   return (
-    <div className="bg-neutral-dark-blue rounded-2xl flex-grow">
-      <div className="bg-neutral-desaturated-blue p-8 rounded-2xl">
+    <div className="userboard mb-4 lg:mb-0 bg-neutral-dark-blue flex-shrink-0 rounded-2xl">
+      <div className="user-profile bg-neutral-desaturated-blue p-8 rounded-2xl flex gap-5 items-center">
         <div className="w-24 h-24">
           <img
             src="/src/assets/images/image-jeremy.png"
@@ -29,9 +27,9 @@ export default function Userboard({
           />
         </div>
 
-        <div className="mt-10 mb-12">
+        <div className="lg:mt-10 lg:mb-12">
           <span className="font-thin">Report for</span>
-          <h1 className="text-5xl pr-8 mt-2 font-light">Jeremy<br />Robson</h1>
+          <h1 className="text-3xl md:text-5xl mt-2 font-light">Jeremy Robson</h1>
         </div>
       </div>
 
@@ -40,7 +38,7 @@ export default function Userboard({
           return (
             <span
               onClick={handleClick}
-              className={`${currentlyActive === timeframe.toLowerCase() ? 'text-white' : ''}`}
+              className={`${currentlyActive === timeframe ? 'text-white' : ''}`}
               key={i}
             >{timeframe}</span>
           )

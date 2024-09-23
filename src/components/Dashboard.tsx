@@ -5,30 +5,30 @@ import Board from "./Board"
 
 import { Data } from "../types/Data"
 
+const boardColors = [
+    'bg-primary-light-red-work',
+    'bg-primary-soft-blue-play',
+    'bg-primary-light-red-study',
+    'bg-primary-lime-green-exercise',
+    'bg-primary-voilet-social',
+    'bg-primary-soft-orange-self-care'
+]
+
 export default function Dashboard({
     data
 }: {
     data: Data[]
 }) {
-    const [currentlyActive, setCurrentlyActive] = React.useState('weekly')
-
-    const boardColors = [
-        'bg-primary-light-red-work',
-        'bg-primary-soft-blue-play',
-        'bg-primary-light-red-study',
-        'bg-primary-lime-green-exercise',
-        'bg-primary-voilet-social',
-        'bg-primary-soft-orange-self-care'
-    ]
+    const [currentlyActive, setCurrentlyActive] = React.useState('Weekly')
 
     return (
-        <div className="flex gap-5">
+        <div className="dashboard">
             <Userboard state={{
                 currentlyActive,
                 setCurrentlyActive
             }} />
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="boards-container">
                 {data.map((it, i) => {
                     return (
                         <Board
@@ -36,7 +36,7 @@ export default function Dashboard({
                                 currentlyActive,
                                 ...it
                             }}
-                            color={boardColors[i]}
+                            backgroundColor={boardColors[i]}
                             key={i}
                         />
                     )

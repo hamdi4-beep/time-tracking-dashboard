@@ -9,13 +9,46 @@
     }
 }
 
+.userboard {
+    flex-basis: 20rem;
+}
+
 .timeframes-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     gap: .5em;
 }
 
 .timeframes-list span {
     align-self: flex-start;
     cursor: pointer;
+}
+
+.boards-container {
+    display: block;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 1024px) {
+    .timeframes-list {
+        flex-direction: column;
+    }
+
+    .dashboard {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .user-profile {
+        display: block;
+    }
+
+    .boards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+        gap: 1rem;
+        max-width: 768px;
+    }
 }
