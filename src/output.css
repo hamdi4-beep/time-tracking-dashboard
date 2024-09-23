@@ -806,6 +806,10 @@ video {
     margin-top: 0.75rem;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -817,6 +821,14 @@ video {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:outline {
+    outline-style: solid;
+  }
+
+  .md\:outline-white {
+    outline-color: #fff;
   }
 }
 

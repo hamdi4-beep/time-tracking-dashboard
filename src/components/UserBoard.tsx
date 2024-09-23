@@ -17,7 +17,7 @@ export default function Userboard({
   }
 
   return (
-    <div className="userboard bg-neutral-dark-blue flex-shrink-0 rounded-2xl">
+    <div className="userboard mb-4 lg:mb-0 bg-neutral-dark-blue flex-shrink-0 rounded-2xl">
       <div className="user-profile bg-neutral-desaturated-blue p-8 rounded-2xl flex gap-5 items-center">
         <div className="w-24 h-24">
           <img
