@@ -38,7 +38,7 @@ export default function Userboard({
           return (
             <span
               onClick={handleClick}
-              className={`${currentlyActive === timeframe ? 'text-white' : ''}`}
+              className={`${currentlyActive === timeframe ? 'text-white' : ''} hover:text-white`}
               key={i}
             >{timeframe}</span>
           )
