@@ -774,7 +774,7 @@ video {
   flex-grow: 1;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
   .timeframes-list {
     flex-direction: column;
   }
