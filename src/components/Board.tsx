@@ -27,7 +27,7 @@ export default function Board({
   return (
     <div className={`${backgroundColor} rounded-2xl mb-4 lg:mb-0 overflow-hidden`}>
       <img
-        src={'/src/assets/images/' + data.src}
+        src={'/time-tracking-dashboard/assets/images/' + data.src}
         className="ml-auto -mt-3 h-[60px]"
         alt=""
       />
@@ -36,7 +36,7 @@ export default function Board({
         <div className="flex justify-between items-center md:mb-7 mb-2">
           <h2 className="text-1xl font-medium">{data.title}</h2>
           <img
-            src="/src/assets/images/icon-ellipsis.svg" alt="" />
+            src="/time-tracking-dashboard/assets/images/icon-ellipsis.svg" alt="" />
         </div>
 
         <div className="flex md:block items-center justify-between">

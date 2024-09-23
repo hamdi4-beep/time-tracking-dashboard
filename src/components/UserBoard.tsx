@@ -21,7 +21,7 @@ export default function Userboard({
       <div className="user-profile bg-neutral-desaturated-blue p-8 rounded-2xl flex gap-5 items-center">
         <div className="w-24 h-24">
           <img
-            src="/src/assets/images/image-jeremy.png"
+            src="/time-tracking-dashboard/assets/images/image-jeremy.png"
             className="outline text-white rounded-full"
             alt=""
           />
