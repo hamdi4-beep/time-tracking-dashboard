@@ -9,6 +9,10 @@
     }
 }
 
+.userboard {
+    flex-basis: 20rem;
+}
+
 .timeframes-list {
     display: flex;
     flex-direction: row;
@@ -31,13 +35,20 @@
         flex-direction: column;
     }
 
+    .dashboard {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
     .user-profile {
         display: block;
     }
 
     .boards-container {
         display: grid;
-        grid-template-columns: repeat(3, minmax(16rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
         gap: 1rem;
+        max-width: 768px;
     }
 }
