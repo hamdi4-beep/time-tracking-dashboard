@@ -9,6 +9,11 @@
     }
 }
 
+body {
+    background-color: hsl(226, 43%, 10%);
+    padding: 1em;
+}
+
 .userboard {
     flex-basis: 20rem;
 }

@@ -648,11 +648,6 @@ video {
   background-color: hsl(235 45% 61% / var(--tw-bg-opacity));
 }
 
-.bg-neutral-very-dark-blue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(226 43% 10% / var(--tw-bg-opacity));
-}
-
 .bg-primary-light-red-study {
   --tw-bg-opacity: 1;
   background-color: hsl(348 100% 68% / var(--tw-bg-opacity));
@@ -753,6 +748,11 @@ video {
   }
 }
 
+body {
+  background-color: hsl(226, 43%, 10%);
+  padding: 1em;
+}
+
 .userboard {
   flex-basis: 20rem;
 }
@@ -795,31 +795,6 @@ video {
     gap: 1rem;
     max-width: 768px;
   }
-}
-
-.hover\:bg-neutral-pale-blue:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(236 100% 87% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-neutral-very-dark-blue:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(226 43% 10% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-primary-blue:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(246 80% 60% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-primary-soft-blue-play:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(195 74% 62% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-neutral-desaturated-blue:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(235 45% 61% / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover {
