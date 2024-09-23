@@ -1,6 +1,6 @@
 {
   "name": "time-tracking-dashboard",
-  "homepage": "https://hamdi4-beep.github.io/time-tracking-dashboard",
+  "homepage": "/time-tracking-dashboard",
   "private": true,
   "version": "0.0.0",
   "type": "module",
